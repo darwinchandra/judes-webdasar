@@ -11,8 +11,8 @@ body {
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: black;
 }
 
 .logo {
@@ -28,11 +28,12 @@ nav ul {
 }
 
 nav ul li {
-  padding: 1.3em;
-  justify-self: end;
 }
 nav ul li a {
-  color: black;
+  padding: 1em;
+  justify-self: end;
+  display: inline-block;
+  color: white;
   font-size: 22px;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
@@ -46,7 +47,7 @@ nav ul li a {
   display: block;
   width: 30px;
   height: 3px;
-  background-color: black;
+  background-color: white;
   margin: 0.5em;
 }
 
@@ -96,4 +97,15 @@ nav ul li a {
   ul li {
     opacity: 1 !important;
   }
+}
+.nav1 {
+  transition: 300ms;
+}
+.active {
+  color: orange;
+  font-weight: 600;
+}
+
+.nav1:hover {
+  color: orange;
 }
