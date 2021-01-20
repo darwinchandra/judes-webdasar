@@ -5,13 +5,14 @@ body {
   background-color: #fbfbfb;
   background: url(bg.jpg) no-repeat;
   font-family: 'Noto Sans' sans-serif;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: black;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 .logo {

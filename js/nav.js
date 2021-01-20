@@ -15,7 +15,7 @@ hamburger.addEventListener('click', () => {
   animation
     .add({
       targets: navBar,
-      height: toggle ? 69 : 600,
+      height: toggle ? 69 : 400,
       delay: toggle ? 300 : 0,
       duration: 300,
       complete: () => {
