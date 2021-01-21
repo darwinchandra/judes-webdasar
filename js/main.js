@@ -72,7 +72,7 @@ function myFunction(e) {
 }
 
 $(window).scroll(function () {
-  $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+  $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
 });
 
 var swiper = new Swiper('.swiper-container-top', {

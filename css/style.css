@@ -19,6 +19,7 @@ nav {
 .logo {
   padding: 0.5em;
   font-size: 30px;
+  margin-left: 20px;
 }
 
 nav ul {
@@ -79,11 +80,6 @@ nav ul li a {
     grid-column: 2/3;
     display: block;
     justify-self: end;
-  }
-
-  .logo {
-    padding: 1em;
-    font-size: 22px;
   }
 
   .hamburger span {
@@ -330,20 +326,6 @@ ul.contant_icon li img {
   height: 200px;
   width: 100%;
 }
-.swiper-slide-brand1,
-.swiper-slide-brand2,
-.swiper-slide-brand3,
-.swiper-slide-brand4,
-.swiper-slide-brand5 {
-  text-align: center;
-  font-size: 18px;
-  background-color: white;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: 0.3s;
-  border: 1px solid black;
-}
 
 .brandcontainer {
   padding: 10px;
@@ -358,6 +340,21 @@ ul.contant_icon li img {
 .btnprevbrandbanner:hover {
   color: black;
   text-shadow: 0px 0px 10px black;
+}
+
+.swiper-slide-brand1,
+.swiper-slide-brand2,
+.swiper-slide-brand3,
+.swiper-slide-brand4,
+.swiper-slide-brand5 {
+  text-align: center;
+  font-size: 18px;
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.3s;
+  border: 1px solid black;
 }
 
 .swiper-slide-brand1 {
