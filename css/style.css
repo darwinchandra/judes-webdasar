@@ -124,8 +124,10 @@ nav ul li a {
 }
 
 .swiper-slide {
+  padding-top: 550px;
   text-align: center;
   font-size: 18px;
+  color: #fff;
   background: #fff;
  background-repeat: no-repeat;
   /* Center slide text vertically */
@@ -140,27 +142,8 @@ nav ul li a {
 .swiper-slide .title {
   font-size: 28px;
   font-weight: 300;
-  margin: 0 auto;
-  display: block;
-  position: fixed;
-  left: 50%;
-  bottom: 38px;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
-  color: white;
 }
 .swiper-slide .text {
   font-size: 15px;
   font-weight: 300;
-  margin: 0 auto;
-  display: block;
-  position: fixed;
-  left: 50%;
-  bottom: 22px;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
-  color: white;
 }
-
-
-
