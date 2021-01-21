@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
     />
+    <link rel="stylesheet" href="../package/swiper-bundle.min.css">
     <link
       href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap"
       rel="stylesheet"
@@ -43,17 +44,27 @@
       </nav>
       <div class="container">
         <div class="swiper-container">
+          <div class="parallax-bg" style="background-image:url(./images/nature-1.jpg)" data-swiper-parallax="-23%"></div>
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-            <div class="swiper-slide">Slide 10</div>
+            <div class="swiper-slide" style="background-image:url(./img/banner1.jpg)");>
+              <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">Slide 2</div>
+              <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+              <div class="text" data-swiper-parallax="-100">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
+                  felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet
+                  magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                  ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros
+                  quis feugiat.</p>
+              </div></div>
+            <div class="swiper-slide" style="background-image:url(./img/banner2.jpg)");>Slide 2</div>
+            <div class="swiper-slide" style="background-image:url(./img/banner3.jpg)");>Slide 3</div>
+            <div class="swiper-slide" style="background-image:url(./img/Ferrari\ 488GTB\ in\ White.jpg) ");>Slide 4</div>
+            <div class="swiper-slide" style="background-image:url(./img/LAMBORGHINI\ MURCIÉLAGO\ LP750.jpg) ");>Slide 5</div>
+            <div class="swiper-slide" style="background-image: ;">Slide 6</div>
+            <div class="swiper-slide" style="background-image: ;">Slide 7</div>
+            <div class="swiper-slide" style="background-image: ;">Slide 8</div>
+            <div class="swiper-slide" style="background-image: ;">Slide 9</div>
+            <div class="swiper-slide" style="background-image: ;">Slide 10</div>
           </div>
           <!-- Add Pagination -->
           <div class="swiper-pagination"></div>
@@ -222,5 +233,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="./js/nav.js"></script>
+    <script src="../package/swiper-bundle.min.js"></script>
   </body>
 </html>

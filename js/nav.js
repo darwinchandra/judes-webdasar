@@ -91,13 +91,5 @@ var swiper = new Swiper('.swiper-container', {
   },
 });
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById(".navlist").style.top = "0";
-  } else {
-    document.getElementById(".navlist").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
+
+
