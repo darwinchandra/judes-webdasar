@@ -91,6 +91,15 @@ var swiper = new Swiper('.swiper-container', {
   },
 });
 
+var swiper = new Swiper('.logocont', {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  pagination: {
+    el: '.Paginationlogo',
+    clickable: true,
+  },
+});
+
 AOS.init({
   duration: 1500,
 })
