@@ -3,7 +3,7 @@ body {
   padding: 0px;
   background: url(bg.jpg) no-repeat;
   font-family: 'Noto Sans' sans-serif;
-  background-color: red;
+  background-color: white;
 }
 
 nav {
@@ -142,11 +142,16 @@ nav ul li a {
 .swiper-slide .title {
   font-size: 28px;
   font-weight: 300;
+  margin-top: 325px;
 }
 .swiper-slide .text {
   font-size: 15px;
   font-weight: 300;
 }
+.swiper-slide .visi,.swiper-slide .misi{
+  margin-top: -100px;
+}
+
 .visi,.misi{
   padding-top: 10px;
   font-size: 30px;
