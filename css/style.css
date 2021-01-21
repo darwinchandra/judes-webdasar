@@ -110,19 +110,23 @@ nav ul li a {
 .nav1:hover {
   color: orange;
 }
-
+.navbgcolor {
+  z-index: 2;
+}
 .navbgcolor.scrolled {
   background-color: rgba(0, 0, 0, 50%);
+  zoom: 0.6;
 }
 
-.swiper-container {
+.swiper-container-top {
   width: 100%;
   height: 100vh;
   margin-left: auto;
   margin-right: auto;
+  z-index: 1;
 }
 
-.swiper-slide {
+.bannerbox {
   padding-top: 550px;
   text-align: center;
   font-size: 18px;
@@ -151,18 +155,14 @@ nav ul li a {
   transition: 300ms;
   color: black;
   zoom: 1.4;
-  opacity: 0.5;
+  text-shadow: 0px 0px 5px white;
 }
-.btnnexttopbanner:hover {
-  color: white;
-  zoom: 2;
-  opacity: 1;
-}
+.btnnexttopbanner:hover,
 .btnprevtopbanner:hover {
   color: white;
-  zoom: 2;
-  opacity: 1;
+  text-shadow: 0px 0px 10px orange;
 }
+
 .titlevm {
   padding-top: 30px;
   font-size: 50px;
@@ -326,27 +326,52 @@ ul.contant_icon li img {
   color: #0fc690;
 }
 
-.logocont{
+.logocont {
+  height: 200px;
   width: 100%;
-  height: 10vh;
 }
-.logoslide {
+.swiper-slide-brand1,
+.swiper-slide-brand2,
+.swiper-slide-brand3,
+.swiper-slide-brand4,
+.swiper-slide-brand5 {
   text-align: center;
   font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  background-size: cover;
-  
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.3s;
+  border: 1px solid black;
+}
+
+.brandcontainer {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.btnnextbrandbanner,
+.btnprevbrandbanner {
+  transition: 200ms;
+  text-shadow: 0px 0px 5px white;
+}
+.btnnextbrandbanner:hover,
+.btnprevbrandbanner:hover {
+  color: black;
+  text-shadow: 0px 0px 10px black;
+}
+
+.swiper-slide-brand1 {
+  background-image: url('../img/car-logo/Honda.png');
+}
+.swiper-slide-brand2 {
+  background-image: url('../img/car-logo/Ferrari.png');
+}
+.swiper-slide-brand3 {
+  background-image: url('../img/car-logo/Ferrari.png');
+}
+.swiper-slide-brand4 {
+  background-image: url('../img/car-logo/Ferrari.png');
+}
+.swiper-slide-brand5 {
+  background-image: url('../img/car-logo/Ferrari.png');
 }
