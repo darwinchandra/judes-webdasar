@@ -346,7 +346,17 @@ ul.contant_icon li img {
 .swiper-slide-brand2,
 .swiper-slide-brand3,
 .swiper-slide-brand4,
-.swiper-slide-brand5 {
+.swiper-slide-brand5,
+.swiper-slide-brand6,
+.swiper-slide-brand7,
+.swiper-slide-brand8,
+.swiper-slide-brand9,
+.swiper-slide-brand10,
+.swiper-slide-brand11,
+.swiper-slide-brand12,
+.swiper-slide-brand13,
+.swiper-slide-brand14,
+.swiper-slide-brand15 {
   text-align: center;
   font-size: 18px;
   background-color: white;
@@ -358,17 +368,48 @@ ul.contant_icon li img {
 }
 
 .swiper-slide-brand1 {
-  background-image: url('../img/car-logo/Honda.png');
+  background-image: url('../img/car-logo/Audi.png');
 }
 .swiper-slide-brand2 {
-  background-image: url('../img/car-logo/Ferrari.png');
+  background-image: url('../img/car-logo/Bentley.png');
 }
 .swiper-slide-brand3 {
-  background-image: url('../img/car-logo/Ferrari.png');
+  background-image: url('../img/car-logo/BMW.png');
 }
 .swiper-slide-brand4 {
-  background-image: url('../img/car-logo/Ferrari.png');
+  background-image: url('../img/car-logo/Bugatti.png');
 }
 .swiper-slide-brand5 {
+  background-image: url('../img/car-logo/Toyota.png');
+}
+.swiper-slide-brand6 {
+  background-image: url('../img/car-logo/Chevrolet.png');
+}
+.swiper-slide-brand7 {
+  background-image: url('../img/car-logo/Daihatsu.png');
+}
+.swiper-slide-brand8 {
+  background-image: url('../img/car-logo/Datsun.png');
+}
+.swiper-slide-brand9 {
   background-image: url('../img/car-logo/Ferrari.png');
 }
+.swiper-slide-brand10 {
+  background-image: url('../img/car-logo/Honda.png');
+}
+.swiper-slide-brand11 {
+  background-image: url('../img/car-logo/Jaguar.png');
+}
+.swiper-slide-brand12 {
+  background-image: url('../img/car-logo/Jeep.png');
+}
+.swiper-slide-brand13 {
+  background-image: url('../img/car-logo/Mercedes-Benz.png');
+}
+.swiper-slide-brand14 {
+  background-image: url('../img/car-logo/Rolls-Royce.png');
+}
+.swiper-slide-brand15 {
+  background-image: url('../img/car-logo/Tesla.png');
+}
+
