@@ -28,7 +28,6 @@ nav ul {
   grid-template-columns: repeat(4, 1fr);
 }
 
-
 nav ul li a {
   padding: 1em;
   justify-self: end;
@@ -129,46 +128,56 @@ nav ul li a {
   font-size: 18px;
   color: #fff;
   background: #fff;
- background-repeat: no-repeat;
+  background-repeat: no-repeat;
   /* Center slide text vertically */
-  
+  vertical-align: bottom;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   background-position: center;
-      background-size: cover;
+  background-size: cover;
 }
-
 
 .swiper-slide .title {
   font-size: 28px;
   font-weight: 300;
-  margin-top: 325px;
+  margin-bottom: 10px;
 }
 .swiper-slide .text {
   font-size: 15px;
   font-weight: 300;
 }
-.swiper-button-next:hover{
+.btnnexttopbanner,
+.btnprevtopbanner {
+  transition: 300ms;
   color: black;
-
+  zoom: 1.4;
+  opacity: 0.5;
 }
-.swiper-button-prev:hover{
-  color: black;
+.btnnexttopbanner:hover {
+  color: white;
+  zoom: 2;
+  opacity: 1;
+}
+.btnprevtopbanner:hover {
+  color: white;
+  zoom: 2;
+  opacity: 1;
 }
 
-.visi,.misi{
+.visi,
+.misi {
   padding-top: 30px;
   font-size: 50px;
   font-weight: 400;
   text-align: center;
   font-family: 'Fraunces', serif;
-  
 }
-.isivisi,.isimisi{
+.isivisi,
+.isimisi {
   padding-top: 30px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 400;
   text-align: center;
   font-family: 'Fraunces', serif;
-  opacity: 0.5;
+  opacity: 0.7;
 }
