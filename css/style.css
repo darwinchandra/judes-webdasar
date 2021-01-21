@@ -163,23 +163,27 @@ nav ul li a {
   zoom: 2;
   opacity: 1;
 }
-
-.visi,
-.misi {
+.titlevm {
   padding-top: 30px;
   font-size: 50px;
   font-weight: 400;
   text-align: center;
   font-family: 'Fraunces', serif;
 }
-.isivisi,
-.isimisi {
+.descvm {
   padding-top: 30px;
   font-size: 30px;
   font-weight: 400;
   text-align: center;
   font-family: 'Fraunces', serif;
   opacity: 0.7;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.visi,
+.misi {
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 
