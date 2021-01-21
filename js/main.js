@@ -68,7 +68,7 @@ function myFunction(e) {
   if (document.querySelector('#navList a.active') !== null) {
     document.querySelector('#navList a.active').classList.remove('active');
   }
-  e.target.className = 'active';
+  e.target.className += ' active';
 }
 
 $(window).scroll(function () {
@@ -90,8 +90,3 @@ var swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
-
-
-
-
-
