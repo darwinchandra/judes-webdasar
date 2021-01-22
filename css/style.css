@@ -422,7 +422,7 @@ ul.contant_icon li img {
   --color-info: #333;
   --color-menu: #031de6;
   --color-menu-hover: #000;
-  --grid-columns: 2;
+  --grid-columns: 3;
   --details-bg-up: #fff;
   --details-bg-down: #f5f0ef;
   --color-product-title: #000;
@@ -570,7 +570,7 @@ main {
 }
 
 .product__bg {
-  height: 20em;
+  height: 2em;
   background: var(--details-bg-down);
   position: relative;
 }
@@ -582,7 +582,7 @@ main {
   position: absolute;
   top: 0;
   width: 80%;
-  height: 30%;
+  height: 60%;
   left: 50%;
   pointer-events: none;
   transform: translate3d(-50%, 0, 0);
