@@ -327,12 +327,13 @@ ul.contant_icon li img {
   height: 200px;
   width: 100%;
 }
-.titlevm{
-	padding-bottom: 50px;
+.titlevm {
+  padding-bottom: 50px;
 }
 .brandcontainer {
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 1);
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
 }
 .btnnextbrandbanner,
 .btnprevbrandbanner {
@@ -419,14 +420,14 @@ ul.contant_icon li img {
 .content {
   --color-text: #000;
   --color-bg: #fff;
-  --color-link: #d35066;
+  --color-link: #ffa047ef;
   --color-link-hover: #000;
   --color-info: #333;
   --color-menu: #031de6;
   --color-menu-hover: #000;
   --grid-columns: 3;
   --details-bg-up: #fff;
-  --details-bg-down: #f5f0ef;
+  --details-bg-down: #ffcd9e;
   --color-product-title: #000;
   --color-product-subtitle: #a09897;
   --color-details-title: #000;
@@ -500,7 +501,7 @@ main {
 }
 
 .content {
-  padding-top : 50px;
+  padding-top: 50px;
   position: relative;
   display: block;
 }
@@ -570,12 +571,13 @@ main {
   position: relative;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  padding-bottom: 10px;
+  transition: 500ms;
 }
 
 .product__bg {
-  
   padding-bottom: 100px;
-  background: var(--details-bg-down);
+  background: #dfdfdf;
   position: relative;
 }
 
@@ -611,13 +613,22 @@ main {
   font-size: 0.85em;
   letter-spacing: 0.115em;
 }
+.product__bg,
+.product__subtitle {
+  transition: 300ms;
+}
 
 .product:hover .product__subtitle {
   color: var(--color-link);
 }
 
+.product:hover .product__bg {
+  background: var(--details-bg-down);
+}
+
 .product__description,
 .product__price {
+  display: none;
   opacity: 0;
   position: absolute;
 }
