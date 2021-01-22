@@ -417,15 +417,15 @@ $('.swiper-container-top').hover(
         targets: this.DOM.img,
         duration: 250,
         easing: 'easeOutCubic',
-        translateX: win.w / 2 - (imgrect.left + imgrect.width / 2),
-        translateY: win.h / 2 - (imgrect.top + imgrect.height / 2),
+        translateX: win.w / 2 - (imgrect.left + imgrect.width / 2) + 200,
+        translateY: win.h / 2 - (imgrect.top + imgrect.height / 2) + 100,
       };
 
       if (win.w > 0.8 * win.h) {
         this.DOM.img.style.transformOrigin = '50% 50%';
         Object.assign(imgAnimeOpts, {
-          scaleX: (0.95 * win.w) / parseInt(0.8 * win.h),
-          scaleY: (0.95 * win.w) / parseInt(0.8 * win.h),
+          scaleX: (0.08 * win.w) / parseInt(0.1 * win.h),
+          scaleY: (0.3 * win.w) / parseInt(0.5 * win.h),
           rotate: 360,
         });
       }
@@ -467,8 +467,10 @@ $('.swiper-container-top').hover(
         easing: 'easeOutCubic',
         translateX: 0,
         translateY: 0,
-        scaleX: 1,
-        scaleY: 1,
+        translateX: 320,
+        translateY: 100,
+        scaleX: 0.7,
+        scaleY: 0.7,
         rotate: 0,
         complete: () => {
           this.DOM.img.style.transformOrigin = '0 0';
