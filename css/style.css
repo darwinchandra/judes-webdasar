@@ -595,6 +595,7 @@ main {
 .product__title {
   position: relative;
   margin: 0.5em 0 0;
+  text-align: center;
   font-size: 1.75em;
   color: var(--color-product-title);
   font-family: 'Playfair Display', serif;
@@ -605,6 +606,7 @@ main {
   position: relative;
   margin: 0;
   text-transform: uppercase;
+  text-align: center;
   color: var(--color-product-subtitle);
   font-size: 0.85em;
   letter-spacing: 0.115em;
