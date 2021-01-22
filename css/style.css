@@ -547,6 +547,7 @@ main {
   position: relative;
   padding: 0 1em;
   width: 100%;
+  height: 100px;
   max-width: 2000px;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -562,7 +563,7 @@ main {
 }
 
 .product {
-  height: 100%;
+  height: 200%;
   padding-top: 10em;
   position: relative;
   cursor: pointer;
@@ -570,7 +571,8 @@ main {
 }
 
 .product__bg {
-  height: 2em;
+  height: 100px;
+  padding-bottom: 150px;
   background: var(--details-bg-down);
   position: relative;
 }
@@ -878,8 +880,10 @@ main {
   transition: 300ms;
 }
 .address a:hover {
-  background-size: cover;
+  color: #0fc690;
+  transition: 300ms;
 }
 .address a {
   text-decoration: none;
+  color: white;
 }
