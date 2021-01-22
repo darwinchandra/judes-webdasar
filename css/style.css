@@ -140,7 +140,7 @@ nav ul li a {
 .swiper-slide .title {
   font-size: 28px;
   font-weight: 300;
-  margin-bottom: 10px;
+  margin-top: 300px;
 }
 .swiper-slide .text {
   font-size: 15px;
@@ -413,14 +413,147 @@ ul.contant_icon li img {
   background-image: url('../img/car-logo/Tesla.png');
 }
 
-.grid {
-	margin: 10em auto 7em;
-	position: relative;
-	padding: 0 1em;
+
+
+
+.content {
+	--color-text: #000;
+	--color-bg: #fff;
+	--color-link: #d35066;
+	--color-link-hover: #000;
+	--color-info: #333;
+	--color-menu: #031de6;
+	--color-menu-hover: #000;
+	--grid-columns: 2;
+	--details-bg-up: #fff;
+	--details-bg-down: #f5f0ef;
+	--color-product-title: #000;
+	--color-product-subtitle: #a09897;
+	--color-details-title: #000;
+	--color-details-subtitle: #000;
+	--color-descr: #000;
+	--color-price: var(--color-link);
+	--color-bg-addtocart: #000;
+	--color-addtocart: #fff;
+	--color-close: #000;
+	--color-bg-magnifier: #000;
+	--color-magnifier: #fff;
+	--color-btn-hover: #c1b3b1;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	min-height: 100vh;
+	color: #57585c;
+	color: var(--color-text);
+	background-color: #fff;
+	background-color: var(--color-bg);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* Page Loader */
+.js .loading::before,
+.js .loading::after {
+	content: '';
+	position: fixed;
+	z-index: 100000;
+	top: 0;
+	left: 0;
 	width: 100%;
-	max-width: 1000px;
-	display: grid;
-	grid-template-columns: repeat(var(--grid-columns), 1fr);
+	height: 100%;
+	background: #333;
+}
+
+.js .loading::after {
+	background: url(../img/electric-guitar.svg) no-repeat 50% 50%;
+	background-size: 5em;
+	pointer-events: none;
+	opacity: 0.1;
+	animation: loaderAnim 1s linear infinite alternate forwards;
+}
+
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+	}
+}
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+/* Icons */
+.icon {
+	display: block;
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0 auto;
+	fill: currentColor;
+}
+
+main {
+	position: relative;
+	width: 100%;
+}
+
+.content {
+	position: relative;
+	display: block;
+}
+
+/* Header */
+.codrops-header {
+	padding: 2em;
+	position: relative;
+	z-index: 100;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	align-items: center;
+}
+
+.codrops-header__title {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 0;
+	padding: 0.75em 0;
+}
+
+.codrops-links {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.codrops-icon {
+	display: inline-block;
+	padding: 0.25em;
+}
+
+.info {
+	color: var(--color-info);
+	text-align: center;
+}
+
+.github {
+	display: block;
+}
+
+.grid {
+	margin: 0;
+	position: relative;
+  padding: 0 1em;
+	width: 100%;
+	max-width: 2000px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
 }
 
 .grid__item {
@@ -429,7 +562,7 @@ ul.contant_icon li img {
 }
 
 .grid__item:nth-child(odd) .product {
-	margin-top: -8em;
+	margin-top: 0;
 }
 
 .product {
@@ -443,7 +576,8 @@ ul.contant_icon li img {
 .product__bg {
 	height: 20em;
 	background: var(--details-bg-down);
-	position: relative;
+  position: relative;
+  ;
 }
 
 .product__img {
@@ -451,7 +585,8 @@ ul.contant_icon li img {
 	margin: 0 auto;
 	display: block;
 	position: absolute;
-	top: 0;
+  top: 0;
+  
 	left: 50%;
 	pointer-events: none;
 	transform: translate3d(-50%,0,0);
@@ -592,6 +727,7 @@ ul.contant_icon li img {
 	font-size: 0.85em;
 	color: var(--color-close);
 }
+
 .dummy-menu {
 	border: 0;
 	background: none;
@@ -630,6 +766,116 @@ ul.contant_icon li img {
 	background-position: 50% 97%;
 	background-size: 150%;
 }
+
+/* Related demos */
+.content--related {
+	padding: 8em 5vw;
+	font-weight: bold;
+	text-align: center;
+	background: #000;
+	color: #f0f0f0;
+}
+
+.content--related a:hover {
+	color: #fff;
+}
+
+.content--related h2 {
+	font-size: 1.25em;
+}
+
+.content--related .demos {
+	padding-bottom: 3em;
+}
+
+.media-item {
+	display: inline-block;
+	padding: 1em;
+	vertical-align: top;
+	transition: color 0.3s;
+}
+
+.media-item__img {
+	max-width: 100%;
+	opacity: 0.8;
+	transition: opacity 0.3s;
+}
+
+.media-item:hover .media-item__img,
+.media-item:focus .media-item__img {
+	opacity: 1;
+}
+
+.media-item__title {
+	font-size: 1em;
+	margin: 0;
+	padding: 0.5em;
+}
+
+@media screen and (max-width: 40em) {
+	.grid {
+		padding: 0 1vw;
+	}
+	.grid__item {
+		padding: 0 2vw;
+	}
+	.product__bg {
+		height: 10em;
+	}
+	.product__img {
+		max-height: 19em;
+	}
+	.product__title {
+		font-size: 1.25em;
+	}
+	.product__subtitle {
+		font-size: 0.75em;
+	}
+	.details {
+		padding: 30vh 0 5vh 10vw;
+	}
+	.details__bg--down {
+		top: 30vh;
+		height: 70vh;
+	}
+	.details__title {
+		font-size: 2em;
+	}
+	.details__subtitle {
+		font-size: 1em;
+	}
+	.details__price {
+		font-size: 1.5em;
+	}
+	.details__description {
+		max-width: 70%;
+		font-size: 0.85em;
+		margin: 1em 0 0 0;
+	}
+	.details__deco {
+		height: 7px;
+		width: 4em;
+	}
+	.details__img {
+		right: -12vh;
+	}
+	.details__magnifier {
+		right: 7vh;
+	}
+	.codrops-header {
+		padding: 1em 4em;
+	}
+	.codrops-header__title {
+		font-weight: bold;
+		padding-bottom: 0.25em;
+		text-align: center;
+		font-size: 1.25em;
+	}
+	.dummy-menu {
+		margin: 1.75em 1.5em 0 0;
+	}
+}
+
 .contant_icon img:hover{
   border-radius: 20px;
   background-color: grey;
@@ -641,3 +887,4 @@ ul.contant_icon li img {
 .address a{
   text-decoration: none;
 }
+

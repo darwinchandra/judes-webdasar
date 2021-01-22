@@ -337,8 +337,9 @@ class Details {
   }
   zoomIn() {
       this.isZoomed = true;
-
+      
       anime({
+        
           targets: [this.DOM.title, this.DOM.deco, this.DOM.subtitle, this.DOM.price, this.DOM.description, this.DOM.cart, this.DOM.magnifier],
           duration: 100,
           easing: 'easeOutSine',
@@ -367,7 +368,7 @@ class Details {
           Object.assign(imgAnimeOpts, {
               scaleX: 0.95*win.w/parseInt(0.8*win.h),
               scaleY: 0.95*win.w/parseInt(0.8*win.h),
-              rotate: 90
+              rotate: 360
           });
       }
       anime(imgAnimeOpts);
@@ -433,6 +434,7 @@ this.DOM = {};
           subtitle: this.DOM.product.querySelector('.product__subtitle').innerHTML,
           description: this.DOM.product.querySelector('.product__description').innerHTML,
           price: this.DOM.product.querySelector('.product__price').innerHTML
+          
       };
 
 this.initEvents();
@@ -459,5 +461,9 @@ DOM.gridItems.forEach(item => items.push(new Item(item)));
 
 DOM.details = new Details();
 
+
 imagesLoaded(document.body, () => document.body.classList.remove('loading'));
 };
+
+
+
