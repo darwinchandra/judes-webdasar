@@ -327,7 +327,9 @@ ul.contant_icon li img {
   height: 200px;
   width: 100%;
 }
-
+.titlevm{
+	padding-bottom: 50px;
+}
 .brandcontainer {
   padding: 10px;
   background-color: rgba(0, 0, 0, 1);
@@ -498,6 +500,7 @@ main {
 }
 
 .content {
+  padding-top : 50px;
   position: relative;
   display: block;
 }
