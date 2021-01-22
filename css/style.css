@@ -880,8 +880,10 @@ main {
   transition: 300ms;
 }
 .address a:hover {
-  background-size: cover;
+  color: #0fc690;
+  transition: 300ms;
 }
 .address a {
   text-decoration: none;
+  color: white;
 }
