@@ -242,7 +242,7 @@ $('.swiper-container-top').hover(
       this.DOM.img.style.opacity = 1;
 
       anime({
-        targets: [this.DOM.bgDown],
+        targets: [this.DOM.bgDown, this.DOM.img],
         duration: (target, index) => (index ? 800 : 250),
         easing: (target, index) => (index ? 'easeOutElastic' : 'easeOutSine'),
         elasticity: 250,
@@ -254,14 +254,10 @@ $('.swiper-container-top').hover(
       });
       anime({
         targets: [this.DOM.img],
-        duration: (target, index) => (index ? 800 : 250),
-        easing: (target, index) => (index ? 'easeOutElastic' : 'easeOutSine'),
-        elasticity: 250,
-        translateX: 400,
+        translateX: 320,
         translateY: 100,
-        scaleX: 0.5,
-        scaleY: 0.5,
-        complete: () => (this.isAnimating = false),
+        scaleX: 0.7,
+        scaleY: 0.7,
       });
       anime({
         targets: [
