@@ -307,22 +307,22 @@ ul.contant_icon li img {
 }
 
 .copyright {
-  padding: 20px 0px;
-  margin-top: 55px;
+  padding-top: 55px;
 }
 
 .copyright p {
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 22px;
   text-align: center;
+  font-style: italic;
 }
 
 .copyright a:hover {
   color: #0fc690;
 }
 .copyright a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .logocont {
